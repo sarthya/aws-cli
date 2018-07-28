@@ -1,7 +1,7 @@
 # aws-cli
 a collection of aws cli commands 
 ## Creating AWS instance with TAG name
-####sh run.sh <instance tag name>
+#### $ sh run.sh <instance tag name>
 ```
 #!/bin/bash
 VAR=`aws ec2 run-instances --image-id ami-********** \
