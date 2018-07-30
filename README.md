@@ -1,4 +1,8 @@
 # aws-cli
+## install AWS cli in ubuntu box
+```
+apt-get update && apt-get install awscli
+```
 a collection of aws cli commands 
 ## Creating AWS instance with TAG name
 #### $ sh run.sh <instance tag name>
