@@ -1,5 +1,5 @@
 # aws-cli
-## install AWS cli in ubuntu box
+## $ install AWS cli in ubuntu box
 ```
 apt-get update && apt-get install awscli
 ```
