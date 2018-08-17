@@ -1,4 +1,28 @@
 # aws-cli
+## install docker in ubuntu box
+### 1. Update the apt package index.
+```
+$ sudo apt-get update
+```
+
+### 2. Install packages to allow apt to use a repository over HTTPS:
+```
+$ sudo apt-get install \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    software-properties-common
+```
+
+### 3. Add Docker’s official GPG key:
+```
+$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+```
+
+
+
+
+
 ## install AWS cli in ubuntu box
 ```
 $ apt-get update && apt-get install awscli
