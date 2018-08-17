@@ -74,7 +74,7 @@ $ sudo curl -o /usr/local/bin/ecs-cli https://s3.amazonaws.com/amazon-ecs-cli/ec
 $ sudo chmod +x /usr/local/bin/ecs-cli
 ```
 
-### there are steps between 1 and 2 to verify the signature, which is not mention here..
+### there are steps between 1 and 2 to verify the signature, which are not mentioned here..
 
 
 
