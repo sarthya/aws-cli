@@ -1,6 +1,6 @@
 # docker + docker-compose + aws-cli + ecs-cli
 
-## install docker in ubuntu box
+## Ξ install docker in ubuntu box
 ### 1. Update the apt package index.
 ```
 $ sudo apt-get update
@@ -40,7 +40,7 @@ $ sudo apt-get update
 ```
 $ sudo apt-get install docker-ce
 ```
-## install docker-compose in ubuntu box
+## Ξ install docker-compose in ubuntu box
 
 ### 1. Run this command to download the latest version of Docker Compose:
 ```
@@ -50,11 +50,41 @@ $ sudo curl -L https://github.com/docker/compose/releases/download/1.18.0/docker
 ```
 $ sudo chmod +x /usr/local/bin/docker-compose
 ```
-## install AWS cli in ubuntu box
+## Ξ install AWS cli in ubuntu box
 ```
 $ apt-get update && apt-get install awscli
 ```
+## OR
+### 1. Install latest python binary:
+```
+$ sudo apt-get install python3-pip
+```
+### 2. Install latest version of aws-cli:
+```
+$ pip3 install --upgrade awscli
+```
 a collection of aws cli commands 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Creating AWS instance with TAG name
 #### $ sh run.sh <instance tag name>
 ```
