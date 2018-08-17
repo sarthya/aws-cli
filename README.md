@@ -40,7 +40,16 @@ $ sudo apt-get update
 ```
 $ sudo apt-get install docker-ce
 ```
+## install docker-compose in ubuntu box
 
+### 1. Run this command to download the latest version of Docker Compose:
+```
+$ sudo curl -L https://github.com/docker/compose/releases/download/1.18.0/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
+```
+### 2. Apply executable permissions to the binary:
+```
+$ sudo chmod +x /usr/local/bin/docker-compose
+```
 ## install AWS cli in ubuntu box
 ```
 $ apt-get update && apt-get install awscli
