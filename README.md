@@ -63,7 +63,18 @@ $ sudo apt-get install python3-pip
 ```
 $ pip3 install --upgrade awscli
 ```
-a collection of aws cli commands 
+
+## Ξ install ecs-cli in ubuntu box
+### 1. Download the ECS CLI binary.
+```
+$ sudo curl -o /usr/local/bin/ecs-cli https://s3.amazonaws.com/amazon-ecs-cli/ecs-cli-linux-amd64-latest
+```
+### 2. Apply Execute Permissions to the Binary
+```
+$ sudo chmod +x /usr/local/bin/ecs-cli
+```
+
+### there are steps between 1 and 2 to verify the signature, which is not mention here..
 
 
 
