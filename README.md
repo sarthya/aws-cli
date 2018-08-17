@@ -1,10 +1,10 @@
-# aws-cli
+# docker + docker-compose + aws-cli + ecs-cli
+
 ## install docker in ubuntu box
 ### 1. Update the apt package index.
 ```
 $ sudo apt-get update
 ```
-
 ### 2. Install packages to allow apt to use a repository over HTTPS:
 ```
 $ sudo apt-get install \
@@ -13,15 +13,33 @@ $ sudo apt-get install \
     curl \
     software-properties-common
 ```
-
 ### 3. Add Docker’s official GPG key:
 ```
 $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 ```
-
-
-
-
+### 4. Add Docker’s official GPG key:
+```
+$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+```
+#### Verify that you now have the key with the fingerprint
+```
+$ sudo apt-key fingerprint 0EBFCD88
+```
+### 5. Use the following command to set up the stable repository.
+```
+$ sudo add-apt-repository \
+   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+   $(lsb_release -cs) \
+   stable"
+```
+### 6. Update the apt package index.
+```
+$ sudo apt-get update
+```
+### 7. Install the latest version of Docker CE, or go to the next step to install a specific version:
+```
+$ sudo apt-get install docker-ce
+```
 
 ## install AWS cli in ubuntu box
 ```
