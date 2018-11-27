@@ -76,8 +76,26 @@ $ sudo chmod +x /usr/local/bin/ecs-cli
 
 ### there are steps between 1 and 2 to verify the signature, which are not mentioned here..
 
+## Ξ install java8 in ubuntu box
+### 1. add ppa binary.
+```
+$ sudo add-apt-repository ppa:webupd8team/java
+```
+### 2. Update and install the installer script:
+```
+$ sudo apt update; sudo apt install oracle-java8-installer
+```
 
+### 3. Set Java environment variables
+```
+$ sudo apt install oracle-java8-set-default
+```
 
+## Ξ install maven in ubuntu box
+### 1. Install maven .
+```
+$ sudo apt-get install maven
+```
 
 
 
