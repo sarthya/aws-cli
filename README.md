@@ -90,6 +90,20 @@ $ sudo apt update; sudo apt install oracle-java8-installer
 ```
 $ sudo apt install oracle-java8-set-default
 ```
+### 4. find java path
+```
+$ type -p javac|xargs readlink -f|xargs dirname|xargs dirname
+```
+
+### 4. Set JAVA_HOME
+```
+$ export JAVA_HOME=<OUTPUT of step 3, abaove step>
+```
+
+### 4. Set PATH
+```
+$ export PATH=$PATH:$JAVA_HOME/bin
+```
 
 ## Ξ install maven in ubuntu box
 ### 1. Install maven .
